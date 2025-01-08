@@ -1,6 +1,26 @@
+```
+git clone https://github.com/CodaLands/ppr-projekt integration
+```
 
 ```
-export PATH="/usr/lib64/openmpi/bin:$PATH"
+sudo dnf groupinstall "Development Tools"
+sudo dnf install gcc gcc-c++
+```
+
+```
+sudo dnf install openmpi openmpi-devel
+```
+
+```
+MPICC=mpicc pip install mpi4py --no-cache-dir
+```
+
+```
+sudo pip install -r requirements.txt
+```
+
+```
+add this to .bashenv: export PATH="/usr/lib64/openmpi/bin:$PATH"
 ```
 
 ```
